@@ -5,6 +5,10 @@ A production-quality, zero-budget AI research system that delivers comprehensive
 
 ## 🎯 Overview
 
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/dc45bbac-0e43-4772-9162-aeee7be016ae" />
+<img width="1919" height="861" alt="image" src="https://github.com/user-attachments/assets/eef77cea-44d1-4473-b722-949630daf578" />
+<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/367852bf-bd51-4acd-8afa-4a0d8d3d2253" />
+
 The Nitro-Powered AI Research Agent is an end-to-end research automation system that combines the speed of Groq's Llama 3, the intelligence of Gemini, and the real-time data capabilities of Tavily Search API. Built with Google's software engineering best practices, this system transforms any research topic into a professional-grade report in under 60 seconds.
 
 ### 🏗️ Architecture
