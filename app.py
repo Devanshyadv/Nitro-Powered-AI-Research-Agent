@@ -12,9 +12,9 @@ from main import run_full_research
 # Load .env and support st.secrets fallback
 from dotenv import load_dotenv
 load_dotenv()
-GROQ_API_KEY   = st.secrets.get("GROQ_API_KEY",   os.getenv("GROQ_API_KEY"))
-GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY"))
-TAVILY_API_KEY = st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY"))
+GROQ_API_KEY   =   os.getenv("GROQ_API_KEY")
+GEMINI_API_KEY =  os.getenv("GEMINI_API_KEY")
+TAVILY_API_KEY =  os.getenv("TAVILY_API_KEY")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

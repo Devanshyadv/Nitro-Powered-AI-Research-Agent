@@ -40,8 +40,8 @@ class ResearchAgent:
     """
 
     def __init__(self):
-        self.groq_api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
-        self.tavily_api_key = st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY"))
+        self.groq_api_key = os.getenv("GROQ_API_KEY")
+        self.tavily_api_key = os.getenv("TAVILY_API_KEY")
         if not (self.groq_api_key and self.tavily_api_key):
             raise ValueError("Missing GROQ_API_KEY or TAVILY_API_KEY")
 
@@ -120,7 +120,7 @@ class AnalystAgent:
     """
 
     def __init__(self):
-        self.gemini_key = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY"))
+        self.gemini_key = os.getenv("GEMINI_API_KEY")
         if not self.gemini_key:
             raise ValueError("Missing GEMINI_API_KEY")
 

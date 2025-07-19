@@ -15,9 +15,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ['GROQ_API_KEY']   = st.secrets.get("GROQ_API_KEY",   os.getenv("GROQ_API_KEY",   ""))
-os.environ['TAVILY_API_KEY'] = st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY", ""))
-os.environ['GEMINI_API_KEY'] = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY", ""))
+os.environ['GROQ_API_KEY']   =    os.getenv("GROQ_API_KEY",   "")
+os.environ['TAVILY_API_KEY'] =  os.getenv("TAVILY_API_KEY", "")
+os.environ['GEMINI_API_KEY'] = os.getenv("GEMINI_API_KEY", "")
 
 # --- Now import the system under test ---
 from main import ResearchAgent, AnalystAgent, ResearchSystem, run_full_research
