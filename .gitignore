@@ -175,10 +175,7 @@ Desktop.ini
 # Google Cloud
 .gcloudignore
 cloudbuild.yaml
-
-# Docker
-Dockerfile
-docker-compose.yml
+#Docker
 .dockerignore
 
 # Temporary files
